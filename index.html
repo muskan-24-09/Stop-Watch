@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stopwatch</title>
+    <style>
+         * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        background-color: #f0f0f0;
+      }
+
+      .watch-cont {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        font-family: Arial, sans-serif;
+        font-size: 50px;
+        color: #f92672;
+        gap: 2rem;
+      }
+
+      .first {
+        width: 65%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .ms {
+        display: none;
+        align-items: center;
+      }
+      .btns {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+      }
+      .btns button {
+        padding: 2% 5%;
+        border-radius: 25px;
+        border: none;
+        background-color: #f92672;
+        font-size: 29px;
+        color: white;
+        margin-right: 1.5rem;
+        box-shadow: 0 0 20px #c3c3c3;
+      }
+
+      button:hover {
+        cursor: pointer;
+        background-color: #f44583;
+      }
+ 
+    </style>
+  </head>
+  <body>
+    <div class="watch-cont">
+      <div class="add">
+        </select>
+      </div>
+      <div class="first">
+        <h1 id="hours">00</h1>
+        <h2>:</h2>
+        <h1 id="minutes">00</h1>
+        <h2>:</h2>
+        <h1 id="seconds">00</h1>
+        <div class="ms">
+          <h2>.</h2>
+          <h1 id="msd">00</h1>
+        </div>
+      </div>
+      <div class="btns">
+        <button id="startBtn">Start</button>
+        <button id="pauseBtn">Pause</button>
+        <button id="resetBtn">Reset</button>
+      </div>
+
+      <div id="disp"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
